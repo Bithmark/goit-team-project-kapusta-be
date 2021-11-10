@@ -13,9 +13,7 @@ mongoose
   .then(() => {
     console.log('Database connection successful');
     app.listen(PORT);
-    // app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
   })
-
   .catch(error => {
     console.log(error.message);
     process.exit(1);
