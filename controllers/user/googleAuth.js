@@ -52,7 +52,7 @@ exports.googleRedirect = async (req, res) => {
   });
   console.log(data);
   return res.redirect(
-    `${FRONTEND_URL}/google-redirect/?access_token=${tokenData.data.access_token}?refresh_token=${tokenData.data.refresh_token}`,
+    `${FRONTEND_URL}/?access_token=${tokenData.data.access_token}?refresh_token=${tokenData.data.refresh_token}`,
   );
 };
 
